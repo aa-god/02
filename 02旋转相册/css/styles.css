@@ -1,0 +1,24 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.sakura {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffC0CB;
+  border-radius: 50%;
+  opacity: 0;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translate3d(0, 100vh, 0);
+    opacity: 1;
+  }
+}
